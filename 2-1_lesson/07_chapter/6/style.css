@@ -1,0 +1,12 @@
+* {background: #E5E5E5;
+}
+
+.hour {
+  color: red;
+}
+.min {
+  color: green;
+}
+.sec {
+  color: blue;
+}
