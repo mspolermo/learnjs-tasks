@@ -14,7 +14,7 @@ table.onclick = function(event) {
   } else if (target.className == 'edit-ok') {
     finishTdEdit(editingTd.elem, true);
   } else if (target.nodeName == 'TD') {
-    if (editingTd) return; // уже редактируется
+    if (editingTd) return; 
 
     makeTdEditable(target);
   }
@@ -27,7 +27,7 @@ function makeTdEditable(td) {
     data: td.innerHTML
   };
 
-  td.classList.add('edit-td'); // td в состоянии редактирования, CSS применятся к textarea внутри ячейки
+  td.classList.add('edit-td'); 
 
   let textArea = document.createElement('textarea');
   textArea.style.width = td.clientWidth + 'px';

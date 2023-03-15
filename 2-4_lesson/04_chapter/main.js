@@ -1,10 +1,8 @@
- // Показать полупрозрачный DIV, чтобы затенить страницу
-    // (форма располагается не внутри него, а рядом, потому что она не должна быть полупрозрачной)
+
     function showCover() {
       let coverDiv = document.createElement('div');
       coverDiv.id = 'cover-div';
 
-      // убираем возможность прокрутки страницы во время показа модального окна с формой
       document.body.style.overflowY = 'hidden';
 
       document.body.append(coverDiv);
@@ -31,7 +29,7 @@
 
       form.onsubmit = function() {
         let value = form.text.value;
-        if (value == '') return false; // игнорируем отправку пустой формы
+        if (value == '') return false;
 
         complete(value);
         return false;
